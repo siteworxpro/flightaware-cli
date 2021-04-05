@@ -1,0 +1,25 @@
+{
+    "name": "siteworx/flight-aware",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ron Rise",
+            "email": "ron@siteworxpro.com"
+        }
+    ],
+    "require": {
+        "php": "^8.0",
+        "league/climate": "^3.7"
+    }
+    ,
+    "require-dev": {
+        "roave/security-advisories": "dev-latest"
+    },
+    "description": "",
+    "autoload": {
+        "psr-4": {
+            "Siteworx\\FlightAware\\": "src/"
+        }
+    }
+}

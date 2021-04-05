@@ -1,0 +1,19 @@
+#!/usr/local/bin/php
+<?php
+
+declare(strict_types=1);
+
+use Siteworx\FlightAware\Client;
+
+require_once __DIR__ . '/vendor/autoload.php';
+
+try {
+    $client = new Client();
+    $client->run();
+} catch (\League\CLImate\Exceptions\InvalidArgumentException $exception) {
+    exit (100);
+} catch (\Exception $exception) {
+    exit(1);
+}
+
+exit(0);
